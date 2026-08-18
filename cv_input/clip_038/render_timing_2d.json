@@ -1,0 +1,18 @@
+{
+  "mode": "2d",
+  "frames": 150,
+  "wall_s": 1.267,
+  "size": [
+    720,
+    1280
+  ],
+  "render_scale": 1.0,
+  "skipped_frames_per_tid": {
+    "1": 0,
+    "2": 1
+  },
+  "selected_tids": [
+    1,
+    2
+  ]
+}

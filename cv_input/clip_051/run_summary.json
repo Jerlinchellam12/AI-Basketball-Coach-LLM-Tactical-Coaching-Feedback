@@ -1,0 +1,53 @@
+{
+  "clip": "clip_051.mp4",
+  "frames": 480,
+  "source_fps": 60.0,
+  "source_size": [
+    1920,
+    1080
+  ],
+  "persons_total": 960,
+  "people_count_hist": {
+    "0": 0,
+    "1": 0,
+    "2": 480
+  },
+  "tracks_seen": [
+    1,
+    2
+  ],
+  "track_frame_counts": {
+    "1": 480,
+    "2": 460
+  },
+  "candidate_rejects": {
+    "degenerate": 0,
+    "too_small": 659,
+    "too_wide": 0,
+    "corner_pip": 0,
+    "over_cap": 704
+  },
+  "inference_errors": 0,
+  "detector": {
+    "bbox_thr": 0.25,
+    "yolo_imgsz": 1280
+  },
+  "tracker": {
+    "max_dist_px": 264.3,
+    "stale_frames": 24,
+    "max_tracks": 2
+  },
+  "rotation_keys_present": [
+    "body_pose_params",
+    "global_rot",
+    "pred_global_rots",
+    "pred_joint_coords"
+  ],
+  "wall_s": 87.202,
+  "fps_inference": 5.5,
+  "csv_rows": 960,
+  "selected_tids": [
+    1,
+    2
+  ]
+}

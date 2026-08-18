@@ -1,0 +1,18 @@
+{
+  "mode": "3d",
+  "frames": 480,
+  "wall_s": 237.596,
+  "size": [
+    1920,
+    1080
+  ],
+  "render_scale": 1.0,
+  "skipped_frames_per_tid": {
+    "1": 0,
+    "2": 0
+  },
+  "selected_tids": [
+    1,
+    2
+  ]
+}

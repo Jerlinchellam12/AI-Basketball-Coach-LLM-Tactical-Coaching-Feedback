@@ -1,0 +1,117 @@
+:root {
+  /* Light/primary surfaces */
+  --cream: #faf3ea;
+  --white: #ffffff;
+  --border: #e6d7c3;
+  --border-soft: #efe4d4;
+
+  /* Dark surfaces (header, hero band) */
+  --ink: #1c130b;
+  --ink-soft: #2a1f14;
+
+  /* Accents */
+  --orange: #ff6a1a;
+  --orange-deep: #c94e0f;
+  --orange-tint: #ffe4d1;
+  --brown: #8b5a2b;
+  --brown-light: #c9a47e;
+
+  /* Text on light surfaces */
+  --text: #1c130b;
+  --text-dim: #6b5b47;
+  --text-faint: #9c8b72;
+
+  /* Text on dark surfaces */
+  --text-on-dark: #f5ede1;
+  --text-on-dark-dim: #c9a47e;
+
+  --good: #2e7d4f;
+  --bad: #c0392b;
+
+  --font-sans: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "Roboto Mono", "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--text);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Subtle court-line texture on the cream background - brown/orange lines
+   at very low opacity, recognizable without being literal/cartoonish. */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.05;
+  background-image:
+    radial-gradient(circle at 50% 120%, transparent 0, transparent 180px, var(--brown) 181px, var(--brown) 183px, transparent 184px),
+    repeating-linear-gradient(0deg, transparent, transparent 119px, var(--brown) 120px);
+  background-size: 100% 100%, 100% 120px;
+}
+
+#root {
+  position: relative;
+  z-index: 1;
+}
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum";
+}
+
+.mono {
+  font-family: var(--font-mono);
+}
+
+button {
+  font-family: inherit;
+}
+
+::selection {
+  background: var(--orange-tint);
+  color: var(--ink);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 4px;
+}
+
+.basketball-icon-spin {
+  animation: bball-spin 6s linear infinite;
+  transform-origin: center;
+}
+
+@keyframes bball-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .basketball-icon-spin {
+    animation: none;
+  }
+}

@@ -1,0 +1,14 @@
+.env
+__pycache__/
+*.pyc
+.venv/
+node_modules/
+
+# Superseded/exploratory data, not part of the current pipeline
+# (see PROJECT.md / evaluation/comparison_notes.md)
+ball_tracking_input/
+backend/output/checkpoints_moment_window_archive/
+backend/output/frontend_data_moment_window_archive/
+
+# Excel lock files
+evaluation/~$*.xlsx

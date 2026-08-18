@@ -1,0 +1,133 @@
+.repr-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+@media (max-width: 720px) {
+  .repr-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.repr-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  box-shadow: 0 1px 2px rgba(28, 19, 11, 0.04);
+  will-change: transform;
+  transition: transform 0.15s ease-out, border-color 0.15s ease, box-shadow 0.15s ease;
+  transform-style: preserve-3d;
+}
+
+.repr-card:hover {
+  border-color: var(--brown-light);
+  box-shadow: 0 10px 24px rgba(28, 19, 11, 0.08);
+}
+
+.repr-card-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.repr-label {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+
+.repr-meta {
+  font-size: 11px;
+  color: var(--text-faint);
+}
+
+.repr-data summary {
+  font-size: 11px;
+  color: var(--text-faint);
+  cursor: pointer;
+  letter-spacing: 0.02em;
+  user-select: none;
+}
+
+.repr-data summary:hover {
+  color: var(--brown);
+}
+
+.repr-data pre {
+  margin: 8px 0 0;
+  max-height: 220px;
+  overflow: auto;
+  font-size: 11px;
+  line-height: 1.5;
+  color: var(--text-dim);
+  background: var(--cream);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 10px;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.repr-feedback {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 4px;
+  border-top: 1px solid var(--border-soft);
+}
+
+.identified-move {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.match-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.match-dot.match {
+  background: var(--good);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--good) 20%, transparent);
+}
+
+.match-dot.no-match {
+  background: var(--bad);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--bad) 20%, transparent);
+}
+
+.identified-move-text {
+  font-size: 13px;
+  color: var(--text);
+  font-style: italic;
+  font-weight: 600;
+}
+
+.positive-observation {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--text-dim);
+}
+
+.alternative-moves {
+  margin: 0;
+  padding-left: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 13px;
+  line-height: 1.4;
+  color: var(--text-dim);
+}

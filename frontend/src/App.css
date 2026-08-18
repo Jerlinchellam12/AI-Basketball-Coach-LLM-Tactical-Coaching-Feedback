@@ -1,0 +1,79 @@
+.app {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-header {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  padding: 22px 32px 20px;
+  background: var(--ink);
+  border-bottom: 3px solid var(--orange);
+}
+
+.brand {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  color: var(--text-on-dark);
+}
+
+.brand-sub {
+  position: relative;
+  z-index: 1;
+  font-size: 12px;
+  color: var(--text-on-dark-dim);
+  letter-spacing: 0.04em;
+}
+
+.error-banner {
+  margin: 16px 32px 0;
+  padding: 12px 16px;
+  border: 1px solid var(--bad);
+  color: var(--bad);
+  background: var(--white);
+  border-radius: 6px;
+  font-size: 13px;
+}
+
+.loading {
+  padding: 48px 32px;
+  color: var(--text-faint);
+  font-size: 13px;
+  letter-spacing: 0.03em;
+}
+
+.app-main {
+  flex: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+  gap: 28px;
+  padding: 24px 32px 48px;
+  align-items: start;
+}
+
+.stage-col {
+  position: sticky;
+  top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+@media (max-width: 1100px) {
+  .app-main {
+    grid-template-columns: 1fr;
+  }
+  .stage-col {
+    position: static;
+  }
+}

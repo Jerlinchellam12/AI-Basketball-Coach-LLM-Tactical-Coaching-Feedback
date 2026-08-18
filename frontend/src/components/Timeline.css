@@ -1,0 +1,53 @@
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.timeline-empty {
+  height: 28px;
+}
+
+.timeline-track {
+  position: relative;
+  height: 4px;
+  background: var(--border);
+  border-radius: 2px;
+  cursor: pointer;
+  margin: 12px 2px;
+}
+
+.timeline-moment-range {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  background: var(--orange-tint);
+  border-radius: 2px;
+}
+
+.timeline-tick {
+  position: absolute;
+  top: -3px;
+  width: 1px;
+  height: 10px;
+  background: var(--brown-light);
+}
+
+.timeline-playhead {
+  position: absolute;
+  top: -5px;
+  width: 2px;
+  height: 14px;
+  background: var(--orange);
+  border-radius: 1px;
+  transform: translateX(-1px);
+  box-shadow: 0 0 4px color-mix(in srgb, var(--orange) 50%, transparent);
+}
+
+.timeline-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  color: var(--text-faint);
+  letter-spacing: 0.03em;
+}
