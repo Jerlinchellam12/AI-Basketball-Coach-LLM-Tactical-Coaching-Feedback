@@ -1,6 +1,6 @@
-# AI Basketball Coach — Representation Comparison for LLM Coaching Feedback
+# Representation Comparison for LLM Basketball Coaching Feedback
 
-MSc Computer Science final project. This system generates personalised,
+This system generates personalised,
 tactical basketball coaching feedback from pose-tracking data of 1-vs-1
 basketball clips, using an LLM (Gemma). Its core research contribution is a
 **controlled comparison of how different input data representations affect
