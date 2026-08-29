@@ -1,7 +1,7 @@
 # AI Basketball Coach — Personalised Post-Session Coaching Using Computer Vision and LLMs
 
 ## Project Overview
-This is an MSc Computer Science final project. It builds an AI-assisted basketball
+Builds an AI-assisted basketball
 coaching system that analyses a 1-vs-1 basketball game and gives the player
 personalised, tactical coaching feedback after the session — not just event counts
 (shots made/missed) but **why** something worked or didn't, and what the player
