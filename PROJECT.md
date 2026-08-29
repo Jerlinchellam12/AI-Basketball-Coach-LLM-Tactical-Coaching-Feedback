@@ -1,7 +1,7 @@
 # AI Basketball Coach — LLM Input Representation Comparison for Personalised Tactical Coaching Feedback
 
 ## Project Overview
-MSc Computer Science final project (dissertation). This system generates
+This system generates
 personalised, tactical basketball coaching feedback from pose-tracking data
 of 1-vs-1 basketball clips, using an LLM. The core research contribution is
 a **controlled comparison of how different input data representations
